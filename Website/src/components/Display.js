@@ -10,7 +10,7 @@ export default function Display() {
     <div className="pl-[25%]    w-screen back text-white  ">
       <Home />
       <About />
-      <Resume />
+      {/* <Resume /> */}
       <Projects />
       <Contact />
     </div>

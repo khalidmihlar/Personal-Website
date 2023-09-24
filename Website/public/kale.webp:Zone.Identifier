@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://storage.cloudconvert.com/tasks/bff0bffc-25a9-40d6-834b-f456830f06d0/kale.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20230922%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20230922T060916Z&X-Amz-Expires=86400&X-Amz-Signature=210286ab4c1f9d5ca21c7ac945e0360c5226131ca9a7f8f703d584cd74af9d0f&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22kale.webp%22&response-content-type=image%2Fwebp&x-id=GetObject

@@ -87,7 +87,7 @@ export default function Contact() {
             <label class="block mb-2 text-2xl font-semibold mt-3  text-white ">
               Get in Touch
             </label>
-            <hr className="border-cyan-700 border-2 w-1/3 mx-auto bg-cyan-700" />
+            <hr className="border-red-700 border-2 w-1/3 mx-auto bg-red-700" />
             <div class="flex pt-9">
               <span class="inline-flex items-center px-3 text-sm  border border-r-0  rounded-l-md bg-gray-600 text-gray-400 border-gray-600">
                 <PersonIcon />
@@ -98,7 +98,7 @@ export default function Contact() {
                 id="username"
                 required
                 type="text"
-                class="rounded-none rounded-r-lg  border block flex-1 min-w-0 w-full text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                class="rounded-none rounded-r-lg  border block flex-1 min-w-0 w-full text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-red-500 focus:border-red-500"
                 placeholder="Name"
               />
             </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                 required
                 minLength={5}
                 type="email"
-                class="rounded-none rounded-r-lg border block flex-1 min-w-0 w-full text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                class="rounded-none rounded-r-lg border block flex-1 min-w-0 w-full text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-red-500 focus:border-red-500"
                 placeholder="Email"
               />
             </div>
@@ -123,16 +123,17 @@ export default function Contact() {
               readOnly={mailSent}
               rows="4"
               required
-              minLength={10}
+              minLength={50}
+              maxLength={1000}
               placeholder="Write your message here..."
-              class="block h-40 text-white mt-10 p-2.5 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 focus:ring-blue-500 focus:border-blue-500 resize-none"
+              class="block h-40 text-white mt-10 p-2.5 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 focus:ring-red-500 focus:border-red-500 resize-none"
             ></textarea>
             <button
               type="submit"
               className={`${
                 mailSent === false && loading === false ? "" : "hidden"
               }  mt-7 py-2 px-4 rounded-md 
-              bg-blue-500 hover:bg-blue-700 focus:ring-blue-800
+              bg-red-500 hover:bg-red-700 focus:ring-red-800
               `}
             >
               <EmailIcon /> Send Message
@@ -142,7 +143,7 @@ export default function Contact() {
               type="button"
               className={`text-white ${
                 loading === true ? "visible" : "hidden"
-              } disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 bg-blue-500 hover:bg-blue-700 focus:ring-blue-800 inline-flex items-center mt-5`}
+              } disabled font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 bg-red-500 hover:bg-red-700 focus:ring-red-800 inline-flex items-center mt-5`}
             >
               <svg
                 aria-hidden="true"
@@ -185,20 +186,18 @@ export default function Contact() {
         </div>
         <div className="flex-auto w-80  flex flex-col justify-center text-center items-center  gap-1">
           <div data-aos={"fade-left"}>
-            <lottie-player
-              autoplay
-              loop
-              mode="bounce"
-              src="https://assets9.lottiefiles.com/packages/lf20_3rqwsqnj.json"
-              style={{ width: "350px" }}
-            />
+              <lottie-player
+                autoplay
+                loop
+                src="https://lottie.host/4281320d-1440-4ad3-9bef-08742945ce1d/QgzAYX0ZW8.json"
+                />
           </div>
           <div data-aos={"slide-up"} className="text-center">
             <div className="text-center mt-2 text-3xl font-bold">Follow Me</div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-4">
               <div
                 onClick={() =>
-                  window.open("https://github.com/daniel-jebarson", "_blank")
+                  window.open("https://github.com/khalidmihlar", "_blank")
                 }
               >
                 <GitHubIcon className="cursor-pointer hover:scale-105" />
@@ -206,7 +205,7 @@ export default function Contact() {
               <div
                 onClick={() =>
                   window.open(
-                    "https://www.instagram.com/daniel_diago2003",
+                    "https://www.instagram.com/kale_lid/",
                     "_blank"
                   )
                 }
@@ -217,7 +216,7 @@ export default function Contact() {
               <div
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+                    "https://www.linkedin.com/in/khalid-mihlar-416462168/",
                     "_blank"
                   )
                 }
@@ -228,7 +227,7 @@ export default function Contact() {
               <div
                 onClick={() =>
                   window.open(
-                    "https://www.facebook.com/daniel.jebarson.9",
+                    "https://www.facebook.com/khalidmihlar",
                     "_blank"
                   )
                 }
@@ -236,7 +235,7 @@ export default function Contact() {
                 <FacebookIcon className="cursor-pointer hover:scale-105" />
               </div>{" "}
             </div>
-            <div className="mt-6 italic text-sm font-medium text-blue-500 ">
+            <div className="mt-6 italic text-sm font-medium text-red-500 ">
               <span className=" pl-1 ">Copyright</span>
               <CopyrightIcon className="cursor-pointer mx-1" />
               <span>2021 Khalid Mihlar</span>
